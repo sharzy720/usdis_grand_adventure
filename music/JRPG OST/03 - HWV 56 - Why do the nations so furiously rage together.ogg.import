@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bspvrgkypbm2r"
+path="res://.godot/imported/03 - HWV 56 - Why do the nations so furiously rage together.ogg-28e5a2a43133a7d2868ce946cf6bad30.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/JRPG OST/03 - HWV 56 - Why do the nations so furiously rage together.ogg"
+dest_files=["res://.godot/imported/03 - HWV 56 - Why do the nations so furiously rage together.ogg-28e5a2a43133a7d2868ce946cf6bad30.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbpnt8s4yt3m8"
+path="res://.godot/imported/04 - Sanctuary.ogg-d81c315e725eee7517bed8cc953a75fd.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/JRPG OST/04 - Sanctuary.ogg"
+dest_files=["res://.godot/imported/04 - Sanctuary.ogg-d81c315e725eee7517bed8cc953a75fd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cebrp2yqywh11"
+path="res://.godot/imported/13 - Danger.ogg-ca10d12b8dd5d80db745396a30a2c207.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/JRPG OST/13 - Danger.ogg"
+dest_files=["res://.godot/imported/13 - Danger.ogg-ca10d12b8dd5d80db745396a30a2c207.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

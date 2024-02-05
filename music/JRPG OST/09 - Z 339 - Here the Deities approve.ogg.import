@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cle8inwb6glvi"
+path="res://.godot/imported/09 - Z 339 - Here the Deities approve.ogg-12b8aebe1e874d4234c6db58e368127d.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/JRPG OST/09 - Z 339 - Here the Deities approve.ogg"
+dest_files=["res://.godot/imported/09 - Z 339 - Here the Deities approve.ogg-12b8aebe1e874d4234c6db58e368127d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

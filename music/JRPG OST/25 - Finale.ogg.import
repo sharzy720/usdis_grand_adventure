@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://672h6nr00g5f"
+path="res://.godot/imported/25 - Finale.ogg-cd1f7377fa87f46ed07f5e499d0067de.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/JRPG OST/25 - Finale.ogg"
+dest_files=["res://.godot/imported/25 - Finale.ogg-cd1f7377fa87f46ed07f5e499d0067de.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://j44jvxkywouw"
+path="res://.godot/imported/11 - Ostrich!.ogg-685b1203776a1cbfbf64ceb23b362b8f.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/JRPG OST/11 - Ostrich!.ogg"
+dest_files=["res://.godot/imported/11 - Ostrich!.ogg-685b1203776a1cbfbf64ceb23b362b8f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

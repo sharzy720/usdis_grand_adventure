@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ceed373de277a"
+path="res://.godot/imported/12 - Timeworn Pagoda.ogg-ea15d5ac5bf767b58af3e1c38bf8e5df.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/JRPG OST/12 - Timeworn Pagoda.ogg"
+dest_files=["res://.godot/imported/12 - Timeworn Pagoda.ogg-ea15d5ac5bf767b58af3e1c38bf8e5df.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
