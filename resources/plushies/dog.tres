@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="Plushie" load_steps=12 format=3 uid="uid://bker6ne0c0m7l"]
+
+[ext_resource type="Script" path="res://scripts/plushies_resource.gd" id="1_6pi2d"]
+[ext_resource type="Texture2D" uid="uid://b0latg75jl6cu" path="res://assets/Items/Fruits/Collected.png" id="2_20rmh"]
+[ext_resource type="Texture2D" uid="uid://c5xyfb83f06fa" path="res://assets/Tiny, Tiny Heroes - Animals/spritesheet.png" id="3_4rv46"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lipkv"]
+atlas = ExtResource("2_20rmh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sw3kp"]
+atlas = ExtResource("2_20rmh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jh1tx"]
+atlas = ExtResource("2_20rmh")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dq8kc"]
+atlas = ExtResource("2_20rmh")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6dioa"]
+atlas = ExtResource("2_20rmh")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmiad"]
+atlas = ExtResource("2_20rmh")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nviie"]
+atlas = ExtResource("3_4rv46")
+region = Rect2(192, 384, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n1d3w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lipkv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sw3kp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jh1tx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dq8kc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6dioa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmiad")
+}],
+"loop": true,
+"name": &"collected",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nviie")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1_6pi2d")
+sprite_frames = SubResource("SpriteFrames_n1d3w")
+score = 0

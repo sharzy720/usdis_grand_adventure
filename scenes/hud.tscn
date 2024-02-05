@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcf6cavv8sai1"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_2qiia"]
+[ext_resource type="Theme" uid="uid://wlejy2k4n1ih" path="res://themes/subheading.tres" id="2_gacxm"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_2qiia")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 8.0
+offset_right = 158.0
+offset_bottom = 88.0
+theme = ExtResource("2_gacxm")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Score: 0"

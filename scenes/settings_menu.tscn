@@ -1,0 +1,202 @@
+[gd_scene load_steps=7 format=3 uid="uid://ci4ecoonombb"]
+
+[ext_resource type="Script" path="res://scripts/settings_menu.gd" id="1_g2tdi"]
+[ext_resource type="PackedScene" uid="uid://sp64tw6wp42r" path="res://scenes/menu_background.tscn" id="2_fxomh"]
+[ext_resource type="Theme" uid="uid://c1ta341npox26" path="res://themes/medium_button.tres" id="3_8vu0w"]
+[ext_resource type="FontFile" uid="uid://d0576554gsyf3" path="res://assets/ken_fonts/kenpixel_square.ttf" id="4_15bhv"]
+[ext_resource type="PackedScene" uid="uid://cygmy0qj7qnlx" path="res://scenes/Hotkey_Rebind_button.tscn" id="5_e6uqw"]
+[ext_resource type="StyleBox" uid="uid://k7np03relemg" path="res://themes/settings_menu_button_focus.tres" id="5_h2e4r"]
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g2tdi")
+action_items = Array[String](["move_left", "move_right", "jump"])
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.25098)
+
+[node name="MenuBackground" parent="." instance=ExtResource("2_fxomh")]
+visible = false
+layer_0/tile_data = PackedInt32Array(1048604, 131072, 4, 1114140, 131072, 5, 1179676, 131072, 6, 1245212, 131072, 3, 1310748, 131072, 4, 1376284, 131072, 5, 1441820, 131072, 6, 1507356, 131072, 5, 1572892, 131072, 6, 1638428, 131072, 7, 1048605, 196608, 4, 1114141, 196608, 5, 1179677, 196608, 6, 1245213, 196608, 3, 1310749, 196608, 4, 1376285, 196608, 3, 1441821, 196608, 4, 1507357, 196608, 5, 1572893, 196608, 6, 1638429, 196608, 7, 1048606, 262144, 4, 1114142, 262144, 5, 1179678, 262144, 6, 1245214, 262144, 3, 1310750, 262144, 4, 1376286, 262144, 3, 1441822, 262144, 4, 1507358, 262144, 5, 1572894, 262144, 6, 1638430, 262144, 7, 1048607, 327680, 4, 1114143, 327680, 5, 1179679, 327680, 6, 1245215, 327680, 3, 1310751, 327680, 4, 1376287, 327680, 3, 1441823, 327680, 4, 1507359, 327680, 5, 1572895, 327680, 6, 1638431, 327680, 7, 1048608, 196608, 4, 1114144, 196608, 5, 1179680, 196608, 6, 1245216, 393216, 3, 1310752, 393216, 4, 1376288, 196608, 3, 1441824, 196608, 4, 1507360, 196608, 5, 1572896, 196608, 6, 1638432, 393216, 7, 1048609, 262144, 4, 1114145, 196608, 3, 1179681, 196608, 4, 1245217, 196608, 5, 1310753, 196608, 6, 1376289, 262144, 3, 1441825, 262144, 4, 1507361, 262144, 5, 1572897, 262144, 6, 1638433, 262144, 7, 1048610, 327680, 4, 1114146, 262144, 3, 1179682, 262144, 4, 1245218, 262144, 5, 1310754, 262144, 6, 1376290, 327680, 3, 1441826, 327680, 4, 1507362, 327680, 5, 1572898, 327680, 6, 1638434, 327680, 7, 1048611, 393216, 4, 1114147, 327680, 3, 1179683, 327680, 4, 1245219, 327680, 5, 1310755, 327680, 6, 1376291, 196608, 3, 1441827, 196608, 4, 1507363, 196608, 5, 1572899, 196608, 6, 1638435, 393216, 7, 1048612, 327680, 4, 1114148, 393216, 3, 1179684, 196608, 3, 1245220, 196608, 4, 1310756, 196608, 5, 1376292, 196608, 6, 1441828, 196608, 4, 1507364, 196608, 5, 1572900, 196608, 6, 1638436, 262144, 7, 1048613, 393216, 4, 1114149, 393216, 5, 1179685, 262144, 3, 1245221, 262144, 4, 1310757, 262144, 5, 1376293, 262144, 6, 1441829, 262144, 4, 1507365, 262144, 5, 1572901, 262144, 6, 1638437, 327680, 7, 1048614, 327680, 4, 1114150, 327680, 5, 1179686, 327680, 3, 1245222, 327680, 4, 1310758, 327680, 5, 1376294, 327680, 6, 1441830, 196608, 4, 1507366, 196608, 5, 1572902, 196608, 6, 1638438, 393216, 7, 1048615, 393216, 4, 1114151, 393216, 5, 1179687, 393216, 3, 1245223, 393216, 4, 1310759, 393216, 5, 1376295, 393216, 6, 1441831, 196608, 4, 1507367, 196608, 5, 1572903, 196608, 6, 1638439, 196608, 7, 1048616, 262144, 4, 1114152, 262144, 5, 1179688, 262144, 6, 1245224, 262144, 4, 1310760, 262144, 5, 1376296, 262144, 6, 1441832, 262144, 4, 1507368, 262144, 5, 1572904, 262144, 6, 1638440, 262144, 7, 1048617, 327680, 4, 1114153, 327680, 5, 1179689, 327680, 6, 1245225, 327680, 4, 1310761, 327680, 5, 1376297, 327680, 6, 1441833, 327680, 4, 1507369, 327680, 5, 1572905, 327680, 6, 1638441, 327680, 7, 1048618, 393216, 4, 1114154, 393216, 5, 1179690, 393216, 6, 1245226, 393216, 4, 1310762, 393216, 5, 1376298, 393216, 6, 1441834, 393216, 4, 1507370, 393216, 5, 1572906, 393216, 6, 1638442, 393216, 7, 1048619, 458752, 4, 1114155, 458752, 5, 1179691, 458752, 6, 1245227, 458752, 3, 1310763, 458752, 4, 1376299, 458752, 3, 1441835, 458752, 4, 1507371, 458752, 5, 1572907, 458752, 6, 1638443, 458752, 7, 917532, 131072, 2, 983068, 131072, 3, 917533, 196608, 2, 983069, 196608, 3, 917534, 262144, 2, 983070, 262144, 3, 917535, 327680, 2, 983071, 327680, 3, 917536, 393216, 2, 983072, 196608, 3, 917537, 196608, 2, 983073, 262144, 3, 917538, 262144, 2, 983074, 327680, 3, 917539, 327680, 2, 983075, 393216, 3, 917540, 393216, 2, 983076, 327680, 3, 917541, 196608, 2, 983077, 393216, 3, 917542, 262144, 2, 983078, 327680, 3, 917543, 196608, 2, 983079, 393216, 3, 917544, 262144, 2, 983080, 262144, 3, 917545, 327680, 2, 983081, 327680, 3, 917546, 393216, 2, 983082, 393216, 3, 917547, 458752, 2, 983083, 458752, 3)
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 1
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 80.0
+offset_bottom = 47.0
+theme = ExtResource("3_8vu0w")
+text = "Back"
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -196.0
+offset_right = 256.0
+offset_bottom = 196.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_15bhv")
+tab_alignment = 1
+
+[node name="Settings" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_15bhv")
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Settings/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Settings/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="FullScreenButton" type="CheckButton" parent="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_15bhv")
+theme_override_styles/focus = ExtResource("5_h2e4r")
+text = "Full Screen:"
+
+[node name="VsyncButton" type="CheckButton" parent="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_15bhv")
+theme_override_styles/focus = ExtResource("5_h2e4r")
+button_pressed = true
+text = "Vsync:"
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_right = 5
+
+[node name="VolumeContainer" type="HBoxContainer" parent="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="VolumeLabel" type="Label" parent="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer/MarginContainer/VolumeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_15bhv")
+text = "Volume: "
+
+[node name="VolumeSlider" type="HSlider" parent="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer/MarginContainer/VolumeContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+min_value = -40.0
+max_value = 0.0
+
+[node name="DeleteSaveButton" type="Button" parent="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_15bhv")
+text = "Delete Saved Data"
+
+[node name="Controls" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Controls"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Controls/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Controls/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 64
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HotkeyRebindButton" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("5_e6uqw")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HotkeyRebindButton2" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("5_e6uqw")]
+layout_mode = 2
+size_flags_vertical = 3
+action_name = "move_right"
+
+[node name="HotkeyRebindButton3" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("5_e6uqw")]
+layout_mode = 2
+size_flags_vertical = 3
+action_name = "jump"
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/Controls/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Cheats" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Cheats"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Cheats/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Cheats/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UnlockLevelsButton" type="CheckButton" parent="TabContainer/Cheats/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("4_15bhv")
+theme_override_styles/focus = ExtResource("5_h2e4r")
+text = "Unlock All Levels"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="toggled" from="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer/FullScreenButton" to="." method="_on_full_screen_button_toggled"]
+[connection signal="toggled" from="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer/VsyncButton" to="." method="_on_vsync_button_toggled"]
+[connection signal="pressed" from="TabContainer/Settings/MarginContainer/ScrollContainer/VBoxContainer/DeleteSaveButton" to="." method="_on_delete_save_button_pressed"]
+[connection signal="toggled" from="TabContainer/Cheats/MarginContainer/ScrollContainer/VBoxContainer/UnlockLevelsButton" to="." method="_on_unlock_levels_button_toggled"]

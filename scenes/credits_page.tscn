@@ -1,0 +1,209 @@
+[gd_scene load_steps=6 format=3 uid="uid://c2wu0yxolhuh"]
+
+[ext_resource type="Script" path="res://scripts/credits_page.gd" id="1_1vmii"]
+[ext_resource type="PackedScene" uid="uid://sp64tw6wp42r" path="res://scenes/menu_background.tscn" id="2_kph76"]
+[ext_resource type="Theme" uid="uid://c1ta341npox26" path="res://themes/medium_button.tres" id="3_41hwm"]
+[ext_resource type="FontFile" uid="uid://d0576554gsyf3" path="res://assets/ken_fonts/kenpixel_square.ttf" id="4_a2loj"]
+[ext_resource type="FontFile" uid="uid://d2wdnl45ddycs" path="res://assets/ken_fonts/kenpixel_high_square.ttf" id="5_gijg3"]
+
+[node name="CreditsPage" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1vmii")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.501961)
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 80.0
+offset_bottom = 47.0
+theme = ExtResource("3_41hwm")
+text = "Back"
+
+[node name="MenuBackground" parent="." instance=ExtResource("2_kph76")]
+layer_0/tile_data = PackedInt32Array(720924, 131072, 2, 786460, 131072, 3, 851996, 131072, 4, 917532, 131072, 5, 983068, 131072, 6, 1048604, 131072, 3, 1114140, 131072, 4, 1179676, 131072, 5, 1245212, 131072, 6, 1310748, 131072, 3, 1376284, 131072, 4, 1441820, 131072, 3, 1507356, 131072, 3, 1572892, 131072, 4, 1638428, 131072, 5, 1703964, 131072, 6, 1769500, 131072, 6, 1835036, 131072, 7, 720925, 196608, 2, 786461, 327680, 3, 851997, 327680, 4, 917533, 327680, 5, 983069, 327680, 6, 1048605, 327680, 3, 1114141, 327680, 4, 1179677, 327680, 5, 1245213, 327680, 6, 1310749, 327680, 3, 1376285, 327680, 4, 1441821, 327680, 5, 1507357, 196608, 3, 1572893, 196608, 4, 1638429, 196608, 5, 1703965, 196608, 6, 1769501, 196608, 6, 1835037, 196608, 7, 720926, 262144, 2, 786462, 393216, 3, 851998, 393216, 4, 917534, 393216, 5, 983070, 393216, 6, 1048606, 393216, 3, 1114142, 393216, 4, 1179678, 393216, 5, 1245214, 393216, 6, 1310750, 393216, 3, 1376286, 393216, 4, 1441822, 393216, 5, 1507358, 262144, 3, 1572894, 262144, 4, 1638430, 262144, 5, 1703966, 262144, 6, 1769502, 262144, 6, 1835038, 262144, 7, 720927, 327680, 2, 786463, 196608, 3, 851999, 196608, 4, 917535, 196608, 5, 983071, 196608, 6, 1048607, 196608, 3, 1114143, 196608, 4, 1179679, 196608, 5, 1245215, 196608, 6, 1310751, 196608, 3, 1376287, 196608, 4, 1441823, 196608, 5, 1507359, 327680, 3, 1572895, 327680, 4, 1638431, 327680, 5, 1703967, 327680, 6, 1769503, 327680, 6, 1835039, 327680, 7, 720928, 393216, 2, 786464, 262144, 3, 852000, 262144, 4, 917536, 262144, 5, 983072, 262144, 6, 1048608, 262144, 3, 1114144, 262144, 4, 1179680, 262144, 5, 1245216, 262144, 6, 1310752, 262144, 3, 1376288, 262144, 4, 1441824, 262144, 5, 1507360, 393216, 3, 1572896, 393216, 4, 1638432, 393216, 5, 1703968, 393216, 6, 1769504, 196608, 6, 1835040, 196608, 7, 720929, 196608, 2, 786465, 327680, 3, 852001, 327680, 4, 917537, 327680, 5, 983073, 327680, 6, 1048609, 327680, 3, 1114145, 327680, 4, 1179681, 327680, 5, 1245217, 327680, 6, 1310753, 327680, 3, 1376289, 327680, 4, 1441825, 327680, 5, 1507361, 196608, 3, 1572897, 196608, 4, 1638433, 196608, 5, 1703969, 196608, 6, 1769505, 262144, 6, 1835041, 262144, 7, 720930, 262144, 2, 786466, 393216, 3, 852002, 393216, 4, 917538, 393216, 5, 983074, 393216, 6, 1048610, 393216, 3, 1114146, 393216, 4, 1179682, 393216, 5, 1245218, 393216, 6, 1310754, 393216, 3, 1376290, 393216, 4, 1441826, 393216, 5, 1507362, 262144, 3, 1572898, 262144, 4, 1638434, 262144, 5, 1703970, 262144, 6, 1769506, 327680, 6, 1835042, 327680, 7, 720931, 327680, 2, 786467, 196608, 3, 852003, 196608, 4, 917539, 196608, 5, 983075, 196608, 6, 1048611, 196608, 3, 1114147, 196608, 4, 1179683, 196608, 5, 1245219, 196608, 6, 1310755, 196608, 3, 1376291, 196608, 4, 1441827, 196608, 5, 1507363, 327680, 3, 1572899, 327680, 4, 1638435, 327680, 5, 1703971, 327680, 6, 1769507, 393216, 6, 1835043, 393216, 7, 720932, 393216, 2, 786468, 262144, 3, 852004, 262144, 4, 917540, 262144, 5, 983076, 262144, 6, 1048612, 262144, 3, 1114148, 262144, 4, 1179684, 262144, 5, 1245220, 262144, 6, 1310756, 262144, 3, 1376292, 262144, 4, 1441828, 262144, 5, 1507364, 393216, 3, 1572900, 393216, 4, 1638436, 393216, 5, 1703972, 393216, 6, 1769508, 196608, 6, 1835044, 196608, 7, 720933, 196608, 2, 786469, 327680, 3, 852005, 327680, 4, 917541, 327680, 5, 983077, 327680, 6, 1048613, 327680, 3, 1114149, 327680, 4, 1179685, 327680, 5, 1245221, 327680, 6, 1310757, 327680, 3, 1376293, 327680, 4, 1441829, 327680, 5, 1507365, 196608, 3, 1572901, 196608, 4, 1638437, 196608, 5, 1703973, 196608, 6, 1769509, 262144, 6, 1835045, 262144, 7, 720934, 262144, 2, 786470, 393216, 3, 852006, 393216, 4, 917542, 393216, 5, 983078, 393216, 6, 1048614, 393216, 3, 1114150, 393216, 4, 1179686, 393216, 5, 1245222, 393216, 6, 1310758, 393216, 3, 1376294, 393216, 4, 1441830, 393216, 5, 1507366, 262144, 3, 1572902, 262144, 4, 1638438, 262144, 5, 1703974, 262144, 6, 1769510, 327680, 6, 1835046, 327680, 7, 720935, 196608, 2, 786471, 196608, 3, 852007, 196608, 4, 917543, 196608, 5, 983079, 196608, 6, 1048615, 196608, 3, 1114151, 196608, 4, 1179687, 196608, 5, 1245223, 196608, 6, 1310759, 196608, 3, 1376295, 196608, 4, 1441831, 196608, 5, 1507367, 327680, 3, 1572903, 327680, 4, 1638439, 327680, 5, 1703975, 327680, 6, 1769511, 393216, 6, 1835047, 393216, 7, 720936, 262144, 2, 786472, 262144, 3, 852008, 262144, 4, 917544, 262144, 5, 983080, 262144, 6, 1048616, 262144, 3, 1114152, 262144, 4, 1179688, 262144, 5, 1245224, 262144, 6, 1310760, 262144, 3, 1376296, 262144, 4, 1441832, 262144, 5, 1507368, 393216, 3, 1572904, 393216, 4, 1638440, 393216, 5, 1703976, 393216, 6, 1769512, 262144, 6, 1835048, 262144, 7, 720937, 327680, 2, 786473, 327680, 3, 852009, 327680, 4, 917545, 327680, 5, 983081, 327680, 6, 1048617, 327680, 3, 1114153, 327680, 4, 1179689, 327680, 5, 1245225, 327680, 6, 1310761, 327680, 3, 1376297, 327680, 4, 1441833, 327680, 5, 1507369, 327680, 3, 1572905, 327680, 4, 1638441, 327680, 5, 1703977, 327680, 6, 1769513, 327680, 6, 1835049, 327680, 7, 720938, 393216, 2, 786474, 393216, 3, 852010, 393216, 4, 917546, 393216, 5, 983082, 393216, 6, 1048618, 393216, 3, 1114154, 393216, 4, 1179690, 393216, 5, 1245226, 393216, 6, 1310762, 393216, 3, 1376298, 393216, 4, 1441834, 393216, 5, 1507370, 393216, 3, 1572906, 393216, 4, 1638442, 393216, 5, 1703978, 393216, 6, 1769514, 393216, 6, 1835050, 393216, 7, 720939, 458752, 2, 786475, 458752, 3, 852011, 458752, 4, 917547, 458752, 5, 983083, 458752, 3, 1048619, 458752, 4, 1114155, 458752, 5, 1179691, 458752, 3, 1245227, 458752, 4, 1310763, 458752, 5, 1376299, 458752, 6, 1441835, 458752, 3, 1507371, 458752, 3, 1572907, 458752, 4, 1638443, 458752, 5, 1703979, 458752, 6, 1769515, 458752, 6, 1835051, 458752, 7)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -118.0
+offset_right = 100.0
+offset_bottom = 118.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("4_a2loj")
+text = "Creator:"
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "Johnathyn"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("4_a2loj")
+text = "Assets:"
+
+[node name="LinkButton" type="LinkButton" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "Pixel Frog"
+uri = "https://pixelfrog-assets.itch.io/"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("4_a2loj")
+text = "Music:"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="LinkButton" type="LinkButton" parent="VBoxContainer/HBoxContainer3/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "AVGVSTA"
+uri = "https://opengameart.org/users/avgvsta"
+
+[node name="LinkButton2" type="LinkButton" parent="VBoxContainer/HBoxContainer3/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "Tom Peter"
+uri = "https://opengameart.org/users/tom-peter"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer4/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("4_a2loj")
+text = "Game idea:"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer4/VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "Usdi Yona"
+horizontal_alignment = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer4/VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "E E"
+horizontal_alignment = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer4/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "Johnathyn"
+horizontal_alignment = 2
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer5/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 2
+theme_override_fonts/font = ExtResource("4_a2loj")
+text = "Level Design:"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer5/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "Xavier"
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer5/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "Johnathyn"
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("4_a2loj")
+text = "Fonts:"
+
+[node name="LinkButton" type="LinkButton" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("5_gijg3")
+text = "Kenney"
+uri = "https://www.kenney.nl/"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
